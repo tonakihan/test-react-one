@@ -6,3 +6,7 @@
   border: 1px solid gold;
   border-radius: 5px;
 }
+
+.link {
+  text-decoration: none;
+}

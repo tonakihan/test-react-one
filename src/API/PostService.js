@@ -12,4 +12,14 @@ export default class PostService {
     });
     return await response;
   }
+
+  static async getById(id) {
+    const response = await axios.get(URL + '/' + id);
+    return response;
+  }
+
+  static async getCommentsByPostId(id) {
+    const response = await axios.get(URL + '/' + id + '/comments');
+    return response;
+  }
 }

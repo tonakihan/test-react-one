@@ -1,5 +1,5 @@
 import React from "react";
-import Post from "./Post";
+import Post from "./PostItem.jsx";
 import {TransitionGroup, CSSTransition} from "react-transition-group";
 //import MySelect from "./UI/select/MySelect.jsx";
 //import MyInput from "./UI/input/MyInput.jsx";
