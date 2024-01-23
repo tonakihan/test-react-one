@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials.jpg");
+  background-size: 200%;
+}
+
+h1 {
+  color: rgb(254, 254, 34);
+}
+
+#root .post, #root .page {
+  background-color: whitesmoke;
+}
+#root button {
+  background-color: rgb(250, 244, 238);
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  width: 800px;
+}
+
+.post {
+  display: flex;
+  margin-top: 10px;
+  padding: 10px;
+  border: 2px solid blue;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.post-enter {
+  /*Появление поста - добавление*/
+  opacity: 0;
+  transform: scale(0.9);
+}
+.post-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.post-exit {
+  /*Удаление поста*/
+  opacity: 1;
+}
+.post-exit-active {
+  /*Удаление поста*/
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms
+}
+
+.post-exit-active:first-child {
+  transform: translateY(-40px);
+}
+
+.page {
+  display: inline;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 20%;
+  border: 2px rgb(170, 170, 170) solid;
+}
+.page_current {
+  border: 2px rgb(171, 17, 218) solid;
+  font-weight: bold;
+}

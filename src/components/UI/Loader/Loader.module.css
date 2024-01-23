@@ -1,0 +1,25 @@
+.loader {
+  display: flex;
+  justify-content: center;
+}
+
+.loader.sign {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 10px dashed rgb(233, 204, 76);
+  animation: rotate 1.8s infinite linear;
+}
+
+.none {
+  display: none;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg)
+  }
+}
