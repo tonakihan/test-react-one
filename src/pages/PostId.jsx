@@ -35,7 +35,7 @@ function PostId() {
         <Loader visable={isComLoading}/>
         {comments.map(comm => {
           return(
-            <div style={{marginTop: "10px"}}>
+            <div key={comm.id} style={{marginTop: "10px"}}>
               <h5>{comm.email}</h5>
               <p>{comm.body}</p>
             </div>

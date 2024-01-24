@@ -6,10 +6,11 @@
 body {
   background-image: url("https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials.jpg");
   background-size: 200%;
+  font-family: 'PT Sans', sans-serif;
 }
 
 h1 {
-  color: #b22dd6;
+  color: rgb(5, 240, 228);
 }
 
 #root {
