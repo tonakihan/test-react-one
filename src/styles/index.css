@@ -28,6 +28,14 @@ h1 {
 .App {
   width: 800px;
 }
+@media(min-width: 400px) {
+  .App {
+    width: 400px;
+    overflow-x: scroll;
+    font-size: 10px;
+  }
+  
+}
 
 .post {
   display: flex;
